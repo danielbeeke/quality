@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Quality Screenshot feature.
+ */
+
+include_once 'q_screenshot.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Quality Site feature.
+ */
+
+include_once 'q_site.features.inc';
