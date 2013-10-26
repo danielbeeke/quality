@@ -1,6 +1,7 @@
 modules/contrib
 modules/kraftwagen
 modules/sandbox
+themes/bootstrap
 libraries
 
 .DS_Store
