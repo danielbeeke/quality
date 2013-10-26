@@ -71,6 +71,12 @@ projects[views][subdir] = "contrib"
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
 
+projects[entityreference][type] = "module"
+projects[entityreference][subdir] = "contrib"
+
+projects[token][type] = "module"
+projects[token][subdir] = "contrib"
+
 ; phantomcss
 libraries[phantomcss][download][type]= "get"
 libraries[phantomcss][download][url] = "https://github.com/Huddle/PhantomCSS/archive/master.zip"
