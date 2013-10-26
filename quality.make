@@ -11,6 +11,10 @@ projects[kw_itemnames][download][type] = "git"
 projects[kw_itemnames][download][url] = "git://github.com/kraftwagen/kw-itemnames.git"
 projects[kw_itemnames][subdir] = "kraftwagen"
 
+projects[kw_environment][type] = "module"
+projects[kw_environment][download][type] = "git"
+projects[kw_environment][download][url] = "git://github.com/kraftwagen/kw-environment.git"
+projects[kw_environment][subdir] = "kraftwagen"
 
 ; Modules
 projects[admin_menu][type] = "module"

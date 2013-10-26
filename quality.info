@@ -2,6 +2,7 @@ name = Quality
 description = Install site for Quality
 core = 7.x
 
+dependencies[] = kw_environment
 dependencies[] = block
 dependencies[] = dblog
 dependencies[] = kw_manifests
@@ -14,6 +15,7 @@ dependencies[] = views
 dependencies[] = pathauto
 dependencies[] = strongarm
 dependencies[] = link
+dependencies[] = jquery_update
 
 env_dependencies[development][] = field_ui
 env_dependencies[development][] = context_ui
