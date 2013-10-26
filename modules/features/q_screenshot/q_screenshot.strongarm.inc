@@ -135,6 +135,27 @@ function q_screenshot_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'phantomjs_capture_binary';
+  $strongarm->value = '/home/daniel/sites/quality/build/profiles/quality/libraries/phantomjs/phantomjs';
+  $export['phantomjs_capture_binary'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'phantomjs_capture_dest';
+  $strongarm->value = 'phantomjs';
+  $export['phantomjs_capture_dest'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'phantomjs_capture_script';
+  $strongarm->value = 'profiles/quality/modules/features/q_screenshot/phantomjs.js';
+  $export['phantomjs_capture_script'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'save_continue_q_screenshot';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_q_screenshot'] = $strongarm;
