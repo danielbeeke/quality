@@ -4,11 +4,22 @@ core = 7.x
 
 dependencies[] = block
 dependencies[] = dblog
-
 dependencies[] = kw_manifests
 dependencies[] = features
+dependencies[] = context
+dependencies[] = date
+dependencies[] = ctools
+dependencies[] = entity
+dependencies[] = views
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = link
 
 env_dependencies[development][] = field_ui
-env_dependencies[development][] = strongarm
+env_dependencies[development][] = context_ui
+env_dependencies[development][] = views_ui
+env_dependencies[development][] = diff
+env_dependencies[development][] = search_krumo
+env_dependencies[development][] = admin_menu
 
 files[] = quality.profile
