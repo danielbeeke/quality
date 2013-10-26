@@ -19,6 +19,9 @@ projects[admin_menu][subdir] = "contrib"
 projects[context][type] = "module"
 projects[context][subdir] = "contrib"
 
+projects[jquery_update][type] = "module"
+projects[jquery_update][subdir] = "contrib"
+
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 
