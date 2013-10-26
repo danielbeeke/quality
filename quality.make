@@ -23,6 +23,12 @@ projects[admin_menu][subdir] = "contrib"
 projects[context][type] = "module"
 projects[context][subdir] = "contrib"
 
+projects[phantomjs_capture][type] = "module"
+projects[phantomjs_capture][subdir] = "contrib"
+
+projects[phantomjs_capture][type] = "module"
+projects[phantomjs_capture][subdir] = "contrib"
+
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
@@ -70,6 +76,12 @@ libraries[phantomcss][download][type]= "get"
 libraries[phantomcss][download][url] = "https://github.com/Huddle/PhantomCSS/archive/master.zip"
 libraries[phantomcss][directory_name] = "phantomcss"
 libraries[phantomcss][destination] = "libraries"
+
+; casperjs
+libraries[casperjs][download][type]= "get"
+libraries[casperjs][download][url] = "https://github.com/n1k0/casperjs/zipball/1.1-beta1"
+libraries[casperjs][directory_name] = "casperjs"
+libraries[casperjs][destination] = "libraries"
 
 projects[bootstrap][type] = "theme"
 projects[bootstrap][version] = "3.0-rc2"

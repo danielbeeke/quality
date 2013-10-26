@@ -5,3 +5,16 @@
  */
 
 include_once 'q_screenshot.features.inc';
+
+/**
+ * Implements hook_node_presave().
+ */
+function q_screenshot_node_presave($node) {
+  if ($node->type == 'q_screenshot') {
+    $site = node_load($node->field_q_screenshot_site[LANGUAGE_NONE][0]['target_id']);
+
+    foreach ($site->field_q_site_scan_urls[LANGUAGE_NONE] as $delta => $link) {
+      $node->field_q_screenshot_images[LANGUAGE_NONE][$delta]['url'] = $link['url'];
+    }
+  }
+}

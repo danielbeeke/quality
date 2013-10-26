@@ -1,0 +1,40 @@
+<?php
+/**
+ * @file
+ * Code for the Quality Diff feature.
+ */
+
+include_once 'q_diff.features.inc';
+
+/**
+ * Implements hook_node_presave().
+ */
+function q_diff_node_presave($node) {
+  if ($node->type == 'q_diff') {
+    // Set the current and the before screenshot.
+    if (empty($node->field_q_diff_before[LANGUAGE_NONE]) || empty($node->field_q_diff_current[LANGUAGE_NONE])) {
+      $site_nid = $node->field_q_diff_site[LANGUAGE_NONE][0]['target_id'];
+
+      // Get the two most recent screenshots.
+      $query = db_select('field_data_field_q_screenshot_site', 'f');
+      $query->join('node', 'n', 'n.nid = f.entity_id');
+      $query->fields('n', array('nid'));
+      $query->condition('f.field_q_screenshot_site_target_id', $site_nid,'=')
+      ->range(0, 2)->orderBy('n.created', 'DESC');
+
+      $result = $query->execute();
+
+      while($nid = $result->fetchField()) {
+        $nids[] = $nid;
+      }
+
+      if (count($nids) == 2) {
+        $node->field_q_diff_current[LANGUAGE_NONE][0]['target_id'] = $nids[0];
+        $node->field_q_diff_before[LANGUAGE_NONE][0]['target_id'] = $nids[1];
+      }
+    }
+
+    // Create the diff image.
+    sdpm($node);
+  }
+}
