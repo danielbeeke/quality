@@ -65,4 +65,4 @@ libraries[phantomcss][directory_name] = "phantomcss"
 libraries[phantomcss][destination] = "libraries"
 
 projects[bootstrap][type] = "theme"
-projects[bootstrap][version] = "7.x-3.0-rc2"
+projects[bootstrap][version] = "3.0-rc2"
