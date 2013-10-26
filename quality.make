@@ -63,3 +63,6 @@ libraries[phantomcss][download][type]= "get"
 libraries[phantomcss][download][url] = "https://github.com/Huddle/PhantomCSS/archive/master.zip"
 libraries[phantomcss][directory_name] = "phantomcss"
 libraries[phantomcss][destination] = "libraries"
+
+projects[bootstrap][type] = "theme"
+projects[bootstrap][version] = "7.x-3.0-rc2"
